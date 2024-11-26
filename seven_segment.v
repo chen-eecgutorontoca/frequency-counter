@@ -33,7 +33,7 @@ always @(posedge clk or negedge reset) begin
     if (!reset)begin
         digit <= 1'b0;  
     end else begin
-        digit <= digit;  
+        digit <= ~digit;  
     end
 end
 
